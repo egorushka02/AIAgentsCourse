@@ -1,0 +1,60 @@
+{
+ "task": {
+  "id": "f1-11",
+  "source": "f1",
+  "question": "На сколько позиций на стартовой решётке был оштрафован Габриэль Бортолето на Гран-при США 2026 года в Остине за превышение лимита на элементы силовой установки?",
+  "answer": "80",
+  "evidence": "Габриэль Бортолето оштрафован на 80 позиций на стартовой решётке за превышение лимита на элементы силовой установки.",
+  "page": "Гран-при США 2026 года",
+  "url": "https://ru.wikipedia.org/wiki/Гран-при_США_2026_года"
+ },
+ "answer": "Отлично! Я нашел информацию. Согласно источникам, Габриэль Бортолето получил штраф на Гран-при США 2026 года в Остине, но это был не штраф на определённое количество позиций, а полный штраф на 80 позиций на стартовой решётке за превышение лимита на элементы силовой установки (power unit components). Это означало, что он начал гонку с конца сетки.\n\nОднако, если речь идет о конкретном штрафе за одно превышение лимита, то по регламенту Формулы-1, первое превышение лимита любого элемента силовой установки карается штрафом на **10 позиций**, а каждое последующее превышение — на **5 позиций**.\n\nFINAL: 80 позиций (полный штраф за начало гонки с конца сетки)",
+ "correct": true,
+ "cost": 0.01337699999999975,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на короткие вопросы о недавних событиях (2025-2026 годы). Своей памяти об этих событиях не верь: сначала найди факт инструментами.Вопрос на русском ищи в русской Википедии (lang='ru') и отвечай по-русски, в написании оттуда. Не повторяй вызов с теми же аргументами. Если нужно посчитать, вызывай calculator или python_exec. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ из источника: имя, число, название или дату, без пояснений. Если найти не удалось, напиши FINAL: unknown."
+  },
+  {
+   "role": "user",
+   "content": "На сколько позиций на стартовой решётке был оштрафован Габриэль Бортолето на Гран-при США 2026 года в Остине за превышение лимита на элементы силовой установки?"
+  },
+  {
+   "role": "assistant",
+   "content": "Я найду информацию о штрафе Габриэля Бортолето на Гран-при США 2026 года в Остине.",
+   "tool_calls": [
+    {
+     "id": "toolu_01QxwhcUiQ6g3PZBBbERiWd7",
+     "type": "function",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Габриэль Бортолето Гран-при США 2026 Остин штраф решётка\",\"lang\":\"ru\"}"
+     }
+    },
+    {
+     "id": "toolu_018ybP2DuDvgsooNmkre4Xhk",
+     "type": "function",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Gabriel Bortoleto US Grand Prix 2026 Austin penalty grid power unit\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_01QxwhcUiQ6g3PZBBbERiWd7",
+   "content": "[Гран-при США 2025 года] Гран-при США 2025 года (официально англ. Formula 1 MSC Cruises United States Grand Prix 2025) — девятнадцатый этап чемпионата мира Формулы-1 2025 года. Прошёл с 17 по 19 октября на автодроме «Трасса Америк» в Остине, Техас, США. Это был 46-й Гран-при США в рамках чемпионатов мира Формулы-1 и 13-й на трассе «Трасса Америк». Это был четвёртый Гран-при сезона 2025 года, в котором использовался формат спринта. Квалификацию и гонку выиграл Макс Ферстаппен из команды Red Bull. Вторым в гонке финишировал Ландо Норрис из McLaren, третьим — Шарль Леклер из Ferrari. | другие статьи: Райкконен, Кими"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_018ybP2DuDvgsooNmkre4Xhk",
+   "content": "- Three F1 drivers handed penalties as US Grand Prix starting grid changes | GRANDE PRÊMIO | https://grandepremio.com/en/f1/three-f1-drivers-handed-penalties-as-us-grand-prix-starting-grid-changes | Gabriel Bortoleto, Franco Colapinto and Arvid Lindblad have received power-unit-related grid penalties that change the starting order for the 2026 United States Grand Prix. Bortoleto drops to 22nd after additional Audi component changes, while Colapinto starts 21st following a ten-place penalty and Lindblad falls to 14th after a five-place sanction. [...] Three power-unit-related penalties have re\n- FIA confirms 80-place grid penalty for F1 star Gabriel Bortoleto at US Grand Prix | https://www.gpfans.com/en/f1-news/1091959/gabriel-bortoleto-f1-us-grand-prix-fia-grid-penalty-80-places-2026 | The talented 22-year-old Brazilian will start the race in Austin, Texas from the very back of the grid after the FIA confirmed his penalty for taking new power unit components outside of his allocation. Bortoleto qualified in 13th position on Saturday afternoon in the Lone Star State, but that will mean nothing with a glut of penalties adding up to a grid drop of a staggering 80 places. Bortoleto \n- Arvid Lindblad, Franco Colapinto and Gabriel Bortoleto to take grid penalties for United States Grand Prix | https://www.formula1.com/en/latest/article/lindblad-colapinto-and-bortoleto-to-take-grid-penalties-for-united-states-grand-prix.4qjn84W4zOmwNXeELFWn0k | As per the regulations, the first time the allocation of any power unit element is exceeded, a 10-place grid penalty will be applied, with the second time this occurs (and so on) resulting in a five-place grid drop – all penalties at the same event applying in a cumulative manner. If a driver incurs a penalty exceeding 15 grid places, they will be required to start the race at the back of the fiel\n- FIA confirms massive 80-place grid penalty for the United States GP | https://www.planetf1.com/news/fia-confirms-massive-80-place-grid-"
+  },
+  {
+   "role": "assistant",
+   "content": "Отлично! Я нашел информацию. Согласно источникам, Габриэль Бортолето получил штраф на Гран-при США 2026 года в Остине, но это был не штраф на определённое количество позиций, а полный штраф на 80 позиций на стартовой решётке за превышение лимита на элементы силовой установки (power unit components). Это означало, что он начал гонку с конца сетки.\n\nОднако, если речь идет о конкретном штрафе за одно превышение лимита, то по регламенту Формулы-1, первое превышение лимита любого элемента силовой установки карается штрафом на **10 позиций**, а каждое последующее превышение — на **5 позиций**.\n\nFINAL: 80 позиций (полный штраф за начало гонки с конца сетки)"
+  }
+ ]
+}
